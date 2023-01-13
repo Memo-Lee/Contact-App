@@ -4,6 +4,5 @@
 
 ## react-icon, useState, useEffect
 
-### `npm init`
 ### `npm install`
 
