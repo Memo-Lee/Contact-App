@@ -8,4 +8,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-
+<img src="https://github.com/Memo-Lee/contact-app/blob/main/public/gift.gif"></img>
