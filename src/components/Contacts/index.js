@@ -1,3 +1,4 @@
+import { AiFillPhone } from "react-icons/ai";
 import {useState,useEffect} from 'react'
 import "./style.css";
 
@@ -21,10 +22,6 @@ function Contacts() {
       phone_number:"789"
     }
  ]); // birden fazla eleman tutulacağı için array olacak.
- 
-
-
-
 
  useEffect(()=> {
   console.log(contacts);
@@ -32,7 +29,7 @@ function Contacts() {
  
  return (
     <div id='container'>
-        <h1>Contacts</h1>
+        <h1>Contacts <AiFillPhone /></h1>
         <List contacts={contacts}/> {/*eklenen kayıtları prop olarak gönderme*/} 
         {/* form componente gönderme ve contacts içerisinde hali hazırda olan verileri döndürme*/} 
         <Form addContact = {setContacts} contacts={contacts}/>

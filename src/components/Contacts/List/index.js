@@ -19,9 +19,15 @@ const filtered = contacts.filter((item)=>{
       <ul className='list'>
         {/* 'map' , forech metodu gibi çalışır. key={i} ve item tanımlaması yapılmalıdır. */}
         {filtered.map((contact,i) => (
-          <li key={i}>{contact.fullname}</li>
+          <li key={i}>
+            <div style={{display:"flex",justifyContent:'space-between', backgroundColor:"yellow",margin:5,padding:5}}>
+              <span style={{}}>{contact.fullname}</span>
+              <span>{contact.phone_number}</span>
+            </div>
+          </li>
         ))}
       </ul>
+      <p>Total Contacts ({filtered.length})</p>
     </div>
   )
 }
